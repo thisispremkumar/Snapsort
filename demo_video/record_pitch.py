@@ -94,7 +94,7 @@ SLIDES = {
         <div class="stat"><b>9 of 10</b><span>questions find the right file first with EmbeddingGemma</span></div>
         <div class="stat"><b>120</b><span>automated tests, plus live tests on real Gemma 4</span></div>
       </div>""",
-    "outro": """<p class="eyebrow">github.com/PavitarSinghArneja/gDeepMind_Hackathon</p>
+    "outro": """<p class="eyebrow">github.com/thisispremkumar/Snapsort</p>
       <h1>SnapSort</h1>
       <p class="lede">Senses, decides, acts and checks, fully offline on Gemma 4. It keeps its own state, recovers from failure,
       and knows exactly when to ask.</p>""",

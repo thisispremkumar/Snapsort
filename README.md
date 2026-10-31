@@ -6,10 +6,7 @@ SnapSort watches your Downloads, Screenshots and Desktop folders. It works out w
 matters, files it, reminds you about deadlines, locks secrets in an encrypted vault, and asks you before doing
 anything sensitive. It runs 100% offline on **Gemma 4 E2B and E4B** through Ollama.
 
-Built for the Google DeepMind × GDG Hyderabad hackathon, Problem Statement 5 (local-first agents),
-**track: Personal data**. Writeup: [docs/writeup.md](docs/writeup.md).
-
-**▶ Demo video (3.5 min): https://youtu.be/H9jOFs8JhB4**
+Built for Problem Statement 5 (local-first agents), **track: Personal data**. Writeup: [docs/writeup.md](docs/writeup.md).
 
 ## Why local-first
 
@@ -78,9 +75,9 @@ Model names can be changed with `SNAPSORT_TRIAGE_MODEL`, `SNAPSORT_WORK_MODEL` a
 
 ## Demo
 
-Watch the pitch and live demo: **https://youtu.be/H9jOFs8JhB4**. It shows each part of the Problem Statement 5 bar live, including a real `kill -9` mid-work and the recovery.
+Run the web UI at `http://127.0.0.1:8765`. It shows each part of the Problem Statement 5 bar live, including a real `kill -9` mid-work and the recovery.
 
-`scripts/demo_reset.sh` resets everything. `scripts/drop.sh jio|airtel|lab` drops a file in live.
+`scripts/demo_reset.sh` resets everything. `scripts/drop.ps1` (or `scripts/drop.sh`) drops a file in live.
 The full flow is in [docs/demo-script.md](docs/demo-script.md).
 
 ## Tests

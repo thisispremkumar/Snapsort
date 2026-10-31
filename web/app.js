@@ -452,8 +452,6 @@ document.addEventListener("click", async (e) => {
     if (has("preset")) return setRange(t.dataset.range);
     if (has("open-export")) { $("#export-modal").classList.remove("hidden"); refreshExpenses(); return $(".close-export").focus(); }
     if (has("close-export")) return $("#export-modal").classList.add("hidden");
-    if (t.id === "open-audit" || has("pill-audit")) { $("#audit-modal").classList.remove("hidden"); return $(".close-audit")?.focus(); }
-    if (has("close-audit")) return $("#audit-modal").classList.add("hidden");
     if (has("demo-btn") && t.dataset.sample) {
       t.disabled = true;
       const prevHtml = t.innerHTML;
@@ -498,7 +496,7 @@ document.addEventListener("click", async (e) => {
   }
 });
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") { closeDrawer(); $("#export-modal").classList.add("hidden"); $("#audit-modal")?.classList.add("hidden"); }
+  if (e.key === "Escape") { closeDrawer(); $("#export-modal").classList.add("hidden"); }
   if (e.key === "Enter" && e.target.classList?.contains("card")) openDrawer(e.target.dataset.id);
 });
 
